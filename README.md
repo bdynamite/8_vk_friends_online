@@ -1,7 +1,5 @@
 # Watcher of Friends Online
 
-[TODO. There will be project description]
-
 # How to Install
 
 Python 3 should be already installed. Then use pip (or pip3 if there is a conflict with old Python 2 setup) to install dependencies:
