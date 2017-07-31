@@ -2,7 +2,7 @@ import vk
 import getpass
 
 
-APP_ID = 1  # чтобы получить app_id, нужно зарегистрировать своё приложение на https://vk.com/dev
+APP_ID = 1
 
 
 def get_user_login():
@@ -28,7 +28,8 @@ def get_online_friends(login, password):
 
 def output_friends_to_console(friends_online):
     print('online friends: ')
-    print('\n'.join([f'{x["first_name"]} {x["last_name"]}' for x in friends_online]))
+    print('\n'.join(['{} {}'.format(x['first_name'], x['last_name']) for x in friends_online]))
+#     f'{x["first_name"]} {x["last_name"]}'
 
 if __name__ == '__main__':
     login = get_user_login()
